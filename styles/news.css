@@ -1,0 +1,60 @@
+.news{
+    background: var(--branco);
+    padding: 1em;
+}
+.news__titulo{
+    background:var(--azul);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+.news__texto{
+    color: var(--azul);
+    font-weight: 300;
+    margin:1em 0;
+}
+.news__pesquisa{
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: .6em;
+    width: 90%;
+}
+
+.news__pesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background:url("../imagens/Email.svg") no-repeat;
+    background-position: 1em;
+    padding-left: 3em;
+}
+
+@media screen and (min-width:1024px){
+    .news{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .news__conteudo{
+        width: 30%;
+    }
+    .news__titulo{
+        font-size:24px;
+    }
+    .news__texto{
+        padding-right: 1em;
+    }
+    .news__pesquisa{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .news{
+        padding: 3em 20vw;
+    }
+}
+
